@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skincare Terbaik - Beranda</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    body { font-family: 'Inter', sans-serif; background-color: #f7f3f1; }
+    .product-card { transition: transform 0.3s ease; }
+    .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: '#E91E63', secondary: '#FFEBEE', 'dark-text': '#333333', 'light-bg': '#f7f3f1' }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="text-dark-text">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
+      <span class="text-2xl font-bold text-primary">SKINCARE ANIMETE</span>
+      <div class="space-x-8 hidden sm:flex">
+        <a href="index.html" class="text-primary font-medium">Beranda</a>
+        <a href="Produk Kami.html" class="text-gray-500 hover:text-primary">Produk</a>
+        <a href="kontak.html" class="text-gray-500 hover:text-primary">Kontak</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Beranda -->
+  <main class="max-w-7xl mx-auto p-6 space-y-12">
+    <div class="bg-secondary p-8 md:p-16 rounded-3xl shadow-xl flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 space-y-6 text-center md:text-left">
+        <h1 class="text-5xl font-extrabold text-primary leading-tight">Rahasia Kulit Sehat & Bercahaya</h1>
+        <p class="text-xl text-gray-600">Temukan rangkaian produk skincare yang diformulasikan khusus untuk kebutuhan kulit Anda. Alami perbedaan yang nyata!</p>
+        <a href="Produk Kami.html" class="bg-primary hover:bg-pink-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg inline-block transform hover:scale-105 transition duration-300">Lihat Produk Kami</a>
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0 md:pl-10">
+        <img src="paket animate.jpeg" alt="" class="rounded-3xl shadow-2xl w-full h-auto object-cover">
+      </div>
+    </div>
+
+    <!-- Keunggulan -->
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center p-6 bg-white rounded-2xl shadow-md space-y-3">
+        <span class="text-4xl text-primary mb-3">✨</span>
+        <h3 class="text-xl font-bold">Bahan Alami</h3>
+        <p class="text-gray-600">Ekstrak alami terbaik yang aman untuk semua jenis kulit.</p>
+      </div>
+      <div class="text-center p-6 bg-white rounded-2xl shadow-md space-y-3">
+        <span class="text-4xl text-primary mb-3">🔬</span>
+        <h3 class="text-xl font-bold">Teruji Klinis</h3>
+        <p class="text-gray-600">Diformulasikan oleh ahli dermatologi dan diuji klinis.</p>
+      </div>
+      <div class="text-center p-6 bg-white rounded-2xl shadow-md space-y-3">
+        <span class="text-4xl text-primary mb-3">🌿</span>
+        <h3 class="text-xl font-bold">Ramah Lingkungan</h3>
+        <p class="text-gray-600">Bahan & kemasan berkelanjutan untuk bumi yang lebih baik.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark-text text-white mt-12 py-6 text-center text-sm">
+    &copy; SKINCARE ANIMETE.
+  </footer>
+</body>
+</html>
